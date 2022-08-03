@@ -17,6 +17,7 @@ import DemoProps from './Props/DemoProps/DemoProps';
 import ShoesShop from './Props/ShoesShop/ShoesShop';
 import DemoXemChiTiet from './Props/DemoXemChiTiet/DemoXemChiTiet';
 import ExerciseCarStore from './Props/ExerciseCarStore/ExerciseCarStore';
+import BaiTapThucHanhLayout from './BaiTapThucHanhLayout/BaiTapThucHanhLayout';
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
       {/* <DemoProps></DemoProps> */}
       {/* <ShoesShop /> */}
       {/* <DemoXemChiTiet /> */}
-      <ExerciseCarStore />
+      {/* <ExerciseCarStore /> */}
+      <BaiTapThucHanhLayout />
     </div>
   );
 }
