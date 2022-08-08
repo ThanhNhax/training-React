@@ -1,3 +1,102 @@
+// import '../assets/scss/Page/_ReactBuoi_2.scss'
+
+
+.bg-react_buoi2 {
+
+    background: url(../img/glassesImage/background.jpg);
+    min-height: 100vh;
+    background-position: right bottom;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+
+
+    .top {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba($color: #000000, $alpha: 1.0);
+        text-align: center;
+        color: white;
+    }
+
+    .container {
+        .model {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 120px 0;
+
+            .model-left {
+                position: relative;
+
+
+                .avatar {
+                    background-image: url("../img/glassesImage/model.jpg");
+                    background-position: center top;
+                    background-size: cover;
+                    height: 585px;
+                    width: 480px;
+
+
+                    img {
+                        width: 49%;
+                        position: absolute;
+                        top: 25%;
+                        left: 25%;
+                        opacity: 0.9;
+                    }
+                }
+
+                .glassesInfo {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    width: 100%;
+                    color: white;
+                    padding: 20px;
+                    display: none;
+
+                    h3 {
+                        color: red;
+                    }
+                }
+
+            }
+
+            .model_right {
+
+                background-image: url("../img/glassesImage/model.jpg");
+                background-position: center top;
+                background-size: cover;
+                height: 585px;
+                width: 480px;
+
+
+                img {}
+            }
+        }
+
+        .list_item {
+            width: 980px;
+            margin: 0 auto;
+            background-color: #fff;
+            justify-content: flex-start;
+            align-items: center;
+
+            .item {
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
 .bg-films {
 
     background: url(../img/avanger.jpg);

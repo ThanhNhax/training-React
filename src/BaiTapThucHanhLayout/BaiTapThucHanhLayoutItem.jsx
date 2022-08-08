@@ -100,7 +100,7 @@ export default class BaiTapThucHanhLayoutItem extends Component {
                             <p className="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
                         </div>
                     </div>
-                </div>
+                </div >
             </div >
 
         )
