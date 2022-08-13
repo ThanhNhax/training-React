@@ -10,6 +10,7 @@ import About from './pages/About/About';
 import ReactForm from './pages/ReactForm/ReactForm';
 import Page404 from './pages/Page404/Page404';
 import BaiTapReactBuoi_2State from './BaiTapReactBuoi_2State//BaiTapReactBuoi_2State';
+import ReactLifecycle from './pages/ReactLifecycle/ReactLifecycle';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -21,6 +22,7 @@ root.render(
         <Route path='about' element={<About />}></Route>
         <Route path='reactform' element={<ReactForm />}></Route>
         <Route path='baitapreactbuoi2' element={<BaiTapReactBuoi_2State />}></Route>
+        <Route path='lifecycle' element={<ReactLifecycle />}></Route>
         {/* <Route path='*' element={<Page404 />}></Route> */}
         <Route path='*' element={<Navigate to='' />} ></Route>
       </Route>

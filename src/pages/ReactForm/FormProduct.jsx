@@ -54,7 +54,9 @@ export default class FormProduct extends Component {
     handleSubmit = (event) => {
         // Chặn sự kiện reload của bowser
         event.preventDefault();
-        console.log(this.state);
+        // console.log(this.state);
+        // Khi người bấm nút submit => gửi dữ liệu người dùng nhập từ state => ra hàm addProduct
+        this.props.addProduct(this.state.productInfo);
 
     }
     render() {
