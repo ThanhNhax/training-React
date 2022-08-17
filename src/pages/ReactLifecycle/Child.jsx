@@ -33,12 +33,18 @@ export default class Child extends Component {
         return (
             <div className='container'>
                 <div className='p-5 display-4 bg-dark text-light'>
-                    <h2>Child component: {this.props.number}</h2>
+                    <h2>Child component: {this.props.obNumber.number}</h2>
                 </div>
             </div>
         )
     }
     componentDidMount() {
         console.log('componentdidmount child');
+    }
+    componentDidUpdate(prevProps, prevState) {
+        // Handle sau khi component gọi render
+        // Tuy nhiên hạn chế setState lại  đây=> setState phải có lệnh if
+        console.log(prevProps);
+        console.log(prevState);
     }
 }
