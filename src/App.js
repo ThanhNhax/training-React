@@ -24,16 +24,23 @@ function App() {
               <NavLink style={({ isActive }) => isActive ? { borderRadius: '5px' } : {}} className={({ isActive }) => isActive ? ' nav-link bg-light text-dark' : 'nav-link'} to="/reactform">React Form</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink style={({ isActive }) => isActive ? { borderRadius: '5px' } : {}} className={({ isActive }) => isActive ? ' nav-link bg-light text-dark' : 'nav-link'} to="/baitapreactbuoi2">Bài Tập React Buổi 2</NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink style={({ isActive }) => isActive ? { borderRadius: '5px' } : {}} className={({ isActive }) => isActive ? ' nav-link bg-light text-dark' : 'nav-link'} to="/lifecycle">React Lifecycle</NavLink>
             </li>
+
             <li className="nav-item dropdown">
-              <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</NavLink>
+              <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Redux</NavLink>
               <div className="dropdown-menu" aria-labelledby="dropdownId">
-                <NavLink className="dropdown-item" to="#">Action 1</NavLink>
-                <NavLink className="dropdown-item" to="#">Action 2</NavLink>
+                <NavLink className="dropdown-item" to="demonumber">Demo number</NavLink>
+                <NavLink className="dropdown-item" to="demochonxe">Demo Chọn Xe</NavLink>
+                <NavLink className="dropdown-item" to="demoformcomment">Demo Form Comment</NavLink>
+              </div>
+            </li>
+            <li className="nav-item dropdown">
+              <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài Tập React</NavLink>
+              <div className="dropdown-menu" aria-labelledby="dropdownId">
+                <NavLink className="dropdown-item" to="baitapreactbuoi2">Bài Tập React Buổi 2</NavLink>
+                {/* <NavLink className="dropdown-item" to="demochonxe">Demo Chọn Xe</NavLink>
+                <NavLink className="dropdown-item" to="demoformcomment">Demo Form Comment</NavLink> */}
               </div>
             </li>
           </ul>

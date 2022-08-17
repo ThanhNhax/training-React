@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import FormProduct from "./FormProduct";
 import TableProduct from "./TableProduct";
-import axios from "axios";
+// import axios from "axios";
 export default class ReactForm extends Component {
   state = {
     arrProduct: [
@@ -33,7 +33,7 @@ export default class ReactForm extends Component {
   };
 
   updateProduct = (prodUpdate) => {
-    let prod = this.state.arrProduct.find((p) => p.id == prodUpdate.id);
+    let prod = this.state.arrProduct.find((p) => p.id === prodUpdate.id);
     if (prod) {
       prod.name = prodUpdate.name;
       prod.price = prodUpdate.price;
