@@ -62,20 +62,20 @@ export default class FormProduct extends Component {
   };
 
   //Can thiệp vào quá trình render props của updating
-  //   static getDerivedStateFromProps(newProps, currentState) {
-  //     console.log(currentState);
-  //     //Khi bấm nút chỉnh sửa
-  //     currentState.productInfo = newProps.productEdit;
+  static getDerivedStateFromProps(newProps, currentState) {
+    console.log(currentState);
+    //Khi bấm nút chỉnh sửa
+    currentState.productInfo = newProps.productEdit;
 
-  //     return currentState;
-  //   }
-
-  componentWillReceiveProps(newPorps) {
-    // Chỉ chạy khi props thay đổi
-    this.setState({
-      productInfo: newPorps.productEdit,
-    });
+    return currentState;
   }
+
+  // componentWillReceiveProps(newPorps) {
+  //   // Chỉ chạy khi props thay đổi
+  //   this.setState({
+  //     productInfo: newPorps.productEdit,
+  //   });
+  // }
 
   render() {
     let { id, name, img, price, productType, description } =

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css';
+import './assets/scss/style.scss';
 //Cấu hình react-router-dom 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Contact from './pages/Contact/Contact';
@@ -18,6 +18,8 @@ import { store } from './redux/configStore';
 import DemoTangGiamSL from './pages/DemoRedux/DemoTangGiamSL/DemoTangGiamSL';
 import DemoChonXe from './pages/DemoRedux/DemoChonXe/DemoChonXe';
 import DemoFormComment from './pages/DemoRedux/DemoFormComment/DemoFormComment';
+import BaiTapForm from './pages/BaiTapForm/BaiTapForm';
+import DemoBurger from './pages/DemoRedux/DemoBurger/DemoBurger';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
@@ -34,6 +36,8 @@ root.render(
           <Route path='demonumber' element={<DemoTangGiamSL />}></Route>
           <Route path='demochonxe' element={<DemoChonXe />}></Route>
           <Route path='demoformcomment' element={<DemoFormComment />}></Route>
+          <Route path='demoburger' element={<DemoBurger />}></Route>
+          <Route path='baitapform' element={<BaiTapForm />}></Route>
           {/* <Route path='*' element={<Page404 />}></Route> */}
           <Route path='*' element={<Navigate to='' />} ></Route>
         </Route>

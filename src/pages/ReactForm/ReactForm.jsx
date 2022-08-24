@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import FormProduct from "./FormProduct";
 import TableProduct from "./TableProduct";
-// import axios from "axios";
+import axios from "axios";
 export default class ReactForm extends Component {
   state = {
     arrProduct: [
@@ -113,21 +113,21 @@ export default class ReactForm extends Component {
   componentDidMount() {
     // //Hàm này sẽ thực hiện sauu khi nội dung xong mới chạy hàm render()
     // // loadStorage hoặc call API tại hàm này
-    this.setState({
-      arrProduct: this.layStorage(),
-    });
+    // this.setState({
+    //   arrProduct: this.layStorage(),
+    // });
 
-    // let promise = axios({
-    //   url: "http://svcy.myclass.vn/api/Product/GetAll",
-    //   method: "GET",
-    // });
-    // promise.then((result) => {
-    //   this.setState({
-    //     arrProduct: result.data,
-    //   });
-    // });
-    // promise.catch((err) => {
-    //   console.log(err);
-    // });
+    let promise = axios({
+      url: "http://svcy.myclass.vn/api/Product/GetAll",
+      method: "GET",
+    });
+    promise.then((result) => {
+      this.setState({
+        arrProduct: result.data,
+      });
+    });
+    promise.catch((err) => {
+      console.log(err);
+    });
   }
 }

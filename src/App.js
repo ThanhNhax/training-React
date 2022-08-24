@@ -33,14 +33,15 @@ function App() {
                 <NavLink className="dropdown-item" to="demonumber">Demo number</NavLink>
                 <NavLink className="dropdown-item" to="demochonxe">Demo Chọn Xe</NavLink>
                 <NavLink className="dropdown-item" to="demoformcomment">Demo Form Comment</NavLink>
+                <NavLink className="dropdown-item" to="demoburger">Demo Burger</NavLink>
               </div>
             </li>
             <li className="nav-item dropdown">
               <NavLink className="nav-link dropdown-toggle" to="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài Tập React</NavLink>
               <div className="dropdown-menu" aria-labelledby="dropdownId">
                 <NavLink className="dropdown-item" to="baitapreactbuoi2">Bài Tập React Buổi 2</NavLink>
-                {/* <NavLink className="dropdown-item" to="demochonxe">Demo Chọn Xe</NavLink>
-                <NavLink className="dropdown-item" to="demoformcomment">Demo Form Comment</NavLink> */}
+                {/* {/* <NavLink className="dropdown-item" to="demochonxe">Demo Chọn Xe</NavLink> */}
+                <NavLink className="dropdown-item" to="baitapform">Bài Tập Form</NavLink>
               </div>
             </li>
           </ul>
