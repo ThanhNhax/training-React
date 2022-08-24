@@ -13,12 +13,6 @@ const stateDefault = {
       email: "email@gmail.com",
     },
   ],
-  sinhVienEdit: {
-    maSV: "",
-    tenSV: "",
-    soDienThoai: "",
-    email: "",
-  },
   sinhVienInfo: {
     maSV: "",
     tenSV: "",
@@ -109,9 +103,9 @@ export const sinhVienReducer = (state = stateDefault, action) => {
       state.arrSinhVien = arrSinhVienUpdate;
       return { ...state };
     }
-    case "LAY_STORE": {
-      return;
-    }
+    // case "LAY_STORE": {
+    //   return;
+    // }
     default:
       return state;
   }

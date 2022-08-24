@@ -26,8 +26,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='' element={<App />} >
-          <Route index element={<Home />}></Route>
-          {/* <Route path='' element={<Home />}></Route> */}
+          {/* <Route index element={<Home />}></Route> */}
+          <Route path='home' element={<Home />}></Route>
           <Route path='contact' element={<Contact />}></Route>
           <Route path='about' element={<About />}></Route>
           <Route path='reactform' element={<ReactForm />}></Route>
@@ -37,7 +37,8 @@ root.render(
           <Route path='demochonxe' element={<DemoChonXe />}></Route>
           <Route path='demoformcomment' element={<DemoFormComment />}></Route>
           <Route path='demoburger' element={<DemoBurger />}></Route>
-          <Route path='baitapform' element={<BaiTapForm />}></Route>
+          {/* <Route path='baitapform' element={<BaiTapForm />}></Route> */}
+          <Route index element={<BaiTapForm />}></Route>
           {/* <Route path='*' element={<Page404 />}></Route> */}
           <Route path='*' element={<Navigate to='' />} ></Route>
         </Route>

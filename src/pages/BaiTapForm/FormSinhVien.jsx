@@ -98,6 +98,18 @@ class FormSinhVien extends Component {
             >
               Update
             </button>
+            <div className="form-group m-2">
+              <input
+                type="text"
+                id="search"
+                className="form-control"
+                placeholder="Search"
+                // onInput={this.handleChange()}
+              />
+              <button type="button" className="btn btn-primary mt-2">
+                Search
+              </button>
+            </div>
           </div>
         </form>
       </div>
